@@ -185,14 +185,14 @@ export default function LoadingScreen() {
       </div>
 
       <header
-        className="fixed top-0 left-0 right-0 z-50 p-4 sm:p-6 flex justify-between items-center backdrop-blur-sm border-b"
-        style={{ borderColor: isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)' }}
+        className="fixed top-0 left-0 right-0 z-50 p-4 sm:p-6 flex justify-between items-center backdrop-blur-sm"
+        // The border-b class and style for borderColor have been removed
       >
         <Link href="/" className="text-xl sm:text-2xl font-bold">PORTFOLIO</Link>
         <div className="font-mono text-xs sm:text-sm">{currentTime}</div>
       </header>
 
-      <main className="pt-20 sm:pt-24"> {/* Added padding top for fixed header */}
+      <main className={`pt-20 sm:pt-24 ${isDarkMode ? 'bg-black' : 'bg-lavender-100'}`}>
         {/* Hero Section */}
         <section id="home" className={`min-h-screen flex flex-col items-center justify-center relative ${isDarkMode ? "bg-black" : "bg-gradient-to-b from-lavender-100 via-pink-50 to-white"} px-4 sm:px-6 lg:px-8`}>
           {isDarkMode && (
