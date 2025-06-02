@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import {
+  ArrowDownToLine, // Add this line
   Award,
   BookOpen,
   BrainCircuit,
@@ -301,9 +302,21 @@ const AboutPage = () => {
                     <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${isDarkMode ? "text-white" : "text-black"}`}>
                       Faiz Ata Choirul Anaam
                     </h2>
-                    <p className={`text-base md:text-lg leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
+                    <p className={`text-base md:text-lg leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-6`}>
                       I&apos;m Faiz, a passionate fullstack developer specializing in modern web technologies and user experience design. Currently studying programming at Semarang State Polytechnic, I blend technical expertise with creative problem-solving to build intuitive digital experiences.
                     </p>
+                    <a
+                      href="/images/cv.pdf" // Assuming cv.pdf is in the public/images folder
+                      download="Faiz_Ata_CV.pdf" // Suggested filename for download
+                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                        ${isDarkMode 
+                          ? "bg-white/10 hover:bg-white/20 text-gray-200 border border-white/20" 
+                          : "bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300"
+                        } `}
+                    >
+                      Download CV
+                      <Icon icon={ArrowDownToLine} className="size-4" />
+                    </a>
                   </div>
                 </Card>
               </div>
@@ -415,7 +428,7 @@ const AboutPage = () => {
                     <BookOpen className={`mr-3 size-8 ${isDarkMode ? 'text-white' : 'text-black'}`} />
                     <div>
                       <h3 className={`text-xl md:text-2xl font-bold ${isDarkMode ? "text-white" : "text-gray-900"}`}>
-                        MA (Madrasah Aliyah)
+                        Muhammadiyah Islamic Boarding School in Kudus
                       </h3>
                       <p className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
                         2020 - 2023
@@ -427,8 +440,8 @@ const AboutPage = () => {
                       Organisasi & Kegiatan:
                     </h4>
                     <ul className={`list-disc list-inside space-y-1 text-sm ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
-                      <li>IPM (Ikatan Pelajar Muhammadiyah) - Sekretaris</li>
-                      <li>Latansa - Divisi Layout</li>
+                      <li>IPM (Muhammadiyah Student Association) - Secretary</li>
+                      <li>Latansa - Layout Divition</li>
                     </ul>
                     <h4 className={`text-md font-semibold mt-4 mb-2 ${isDarkMode ? "text-gray-200" : "text-gray-800"}`}>
                       Pengembangan Soft Skills:
