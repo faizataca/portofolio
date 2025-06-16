@@ -443,13 +443,6 @@ const AboutPage = () => {
                       <li>IPM (Muhammadiyah Student Association) - Secretary</li>
                       <li>Latansa - Layout Divition</li>
                     </ul>
-                    <h4 className={`text-md font-semibold mt-4 mb-2 ${isDarkMode ? "text-gray-200" : "text-gray-800"}`}>
-                      Pengembangan Soft Skills:
-                    </h4>
-                    <ul className={`list-disc list-inside space-y-1 text-sm ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
-                      <li>Public Speaking</li>
-                      <li>Time Management</li>
-                    </ul>
                   </div>
                 </div>
               </Card>

@@ -393,7 +393,7 @@ export default function LoadingScreen() {
         <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl sm:text-8xl md:text-[10rem] lg:text-[15rem] xl:text-[18rem] 2xl:text-[22rem] font-black uppercase text-current opacity-[0.1] whitespace-nowrap cursor-default select-none leading-none animate-fade-in-up" style={{ animationDuration: '1s', animationDelay: '0.1s' }}>QUOTE</div>
           <div className="relative z-10 text-center max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto animate-fade-in-up" style={{ animationDuration: '1s', animationDelay: '0.4s' }}>
         <svg className={`mx-auto mb-3 sm:mb-4 md:mb-6 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 ${isDarkMode ? "text-white" : "text-black"}`} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3l-2 4zm8 0h3l2-4V7h-6v6h3l-2 4z"/></svg>
-        <blockquote className={`font-bold tracking-tighter text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl px-2 sm:px-4 md:px-6 mb-4 sm:mb-6 md:mb-8 ${isDarkMode ? "text-white" : "text-black"}`}>Hari kemarin telah berlalu, hari besok belum datang, dan hari ini belum pasti, fighting!!</blockquote>
+        <blockquote className={`font-bold tracking-tighter text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl px-2 sm:px-4 md:px-6 mb-4 sm:mb-6 md:mb-8 ${isDarkMode ? "text-white" : "text-black"}`}>Yesterday has passed, tomorrow has not come, and today is uncertain, fighting!!</blockquote>
         <cite className={`block font-medium tracking-wider text-xs sm:text-sm md:text-base ${isDarkMode ? "text-gray-400" : "text-gray-500"} cursor-default`}>Mi-Ji</cite>
           </div>
         </section>
@@ -414,7 +414,7 @@ export default function LoadingScreen() {
         </span>
           </a>
         </div>
-        <p className={`font-medium tracking-wider text-xs sm:text-sm md:text-base w-full sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-center ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>I'm always open to new opportunities, collaborations, and connections. Got a project to discuss or just want to say hi? Feel free to reach out!</p>
+        <p className={`font-medium tracking-wider text-xs sm:text-sm md:text-base w-full sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-center ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>I'm always open to new opportunities, collaborations, and connections.</p>
           </div>
         </section>
       </main>
